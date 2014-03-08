@@ -1,0 +1,109 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/* Page Elements */
+body, div, p {
+	font-family: ;
+	font-weight: ;
+	font-size: ;
+	font-style: normal;
+	line-height: 1.5;
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+body { /*content including background */
+	background:  url('../img/bg.png');
+	color: ;
+	width: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 75rem;
+  width: 90%;
+  text-align: center;
+}
+
+
+/* Text Styles*/
+h1, h2, h3, h4, h5, h6 {
+	font-family: ;
+	font-variant: small-caps;
+	margin: 0;
+}
+
+h1 {
+	font-size: 3em;
+	padding: 0.5em;
+}
+
+h3 {
+	font-size: 2em;
+	padding: 0.25em;
+}
+
+h5 {
+	font-size: 1.25em;
+	padding: 0.25em;
+}
+
+p {
+	text-align: left;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+
+
+
+/* Nav */
+#nav {
+	position: fixed;
+	right: 0.25rem;
+	z-index: 27;
+}
+
+ul#full-nav > li { padding: 0.5em 0; }
+
+
+ul { list-style: none; margin: 0; padding: 0; }
+
+
+/* Slideshow Responsive */
+.rslides {
+	position: relative;
+	list-style: none;
+	overflow: hidden;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.rslides li {
+	-webkit-backface-visibility: hidden;
+	position: absolute;
+	display: none;
+	width: 100%;
+	left: 0;
+	top: 0;
+}
+
+.rslides li:first-child {
+	position: relative;
+	display: block;
+	float: left;
+}
+
+.rslides img {
+	display: block;
+	height: auto;
+	float: left;
+	width: 100%;
+	border: 0;
+}

@@ -1,0 +1,95 @@
+@charset "utf-8";
+/* CSS Document */
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+/* Layout */
+
+.column { float: left; }
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }
+
+
+.centered { float: none; position: relative; margin: 0 auto; }
+.right { float: right; }
+
+
+/* Small screens (default) */
+html { font-size: 90%; }
+/* Columns */
+.column { padding: 0.5rem; }
+.sm-12 { width:100%; }
+.sm-10 { width:83.33%; }
+.sm-9 { width:75%; }
+.sm-8 { width:66.67%; }
+.sm-6 { width:50%; }
+.sm-4 { width:33.33%; }
+.sm-3 { width:25%; }
+.sm-2 { width:16.67%; }
+
+/* Nav*/
+ul#full-nav { display: none; }
+
+
+/* Medium screens (560px) */
+@media only screen and (min-width: 35rem) { 
+    html { font-size: 95%; }
+    
+    /* Columns */
+    .column {  }
+    .md-12 { width:100%; }
+    .md-10 { width:83.33%; }
+    .md-9 { width:75%; }
+    .md-8 { width:66.67%; }
+    .md-6 { width:50%; }
+    .md-4 { width:33.33%; }
+    .md-3 { width:25%; }
+    .md-2 { width:16.67%; }
+
+    /* Nav*/
+	ul#full-nav { display: block; }
+	a#nav-expand { display: none; }
+}
+ 
+/* Large screens (800px) */
+@media only screen and (min-width: 55rem) { 
+    html { font-size: 100%; }
+
+    /* Columns */
+    .column {  }
+    .lg-12 { width:100%; }
+    .lg-10 { width:83.33%; }
+    .lg-9 { width:75%; }
+    .lg-8 { width:66.67%; }
+    .lg-6 { width:50%; }
+    .lg-4 { width:33.33%; }
+    .lg-3 { width:25%; }
+    .lg-2 { width:16.67%; }
+}
+
+/* X-Large screens (1200px) */
+@media only screen and (min-width: 75rem) { 
+    html { font-size: 110%; }
+
+    /* Columns */
+    .column {  }
+    .xl-12 { width:100%; }
+    .xl-10 { width:83.33%; }
+    .xl-9 { width:75%; }
+    .xl-8 { width:66.67%; }
+    .xl-6 { width:50%; }
+    .xl-4 { width:33.33%; }
+    .xl-3 { width:25%; }
+    .xl-2 { width:16.67%; }
+}
