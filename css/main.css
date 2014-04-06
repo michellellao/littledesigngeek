@@ -94,7 +94,7 @@ h4 { /* Project Titles */
 	font-size: 2em;
 	font-weight: 400;
 	color: #ffffff;
-	text-shadow: 0.1rem 0.15rem #000811;
+	text-shadow: 0.05rem 0.1rem #000811;
 	margin: 0;
 }
 
@@ -296,5 +296,5 @@ img#michelle {
 		font-size: 1.35em;
 		font-weight: 700;
 		padding: 0 0 0.25em; }
-	a.rslides_nav.rslides1_nav { opacity: 0; }
+	a.rslides_nav.rslides1_nav { display: none; }
 }
