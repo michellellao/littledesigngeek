@@ -24,13 +24,17 @@
     <script>
         $(function() {
             $(".rslides").responsiveSlides({
+            	manualControls: '#slideshow-pager',
+            	speed: 300,
+            	timeout: 4500,
+            	nav: true,
             });
         });
     </script>
 </head>
 
 <body>
-<div id="wrapper">
+<div class="wrapper">
 
 	<!-- Title -->
 	<div id="title" class="third-section">
@@ -44,54 +48,81 @@
 		<ul class="rslides">
 			<li>
 	        	<img src="img/slides/americanbg.png" alt="American Business Group Website">
-	        	<div class="slide-title-large">
+	        	<div class="caption">
 		        	<h4>American Business Group - Responsive Site</h4>
-		        	<p>Photoshop, UX, HTML, CSS, JavaScript, jQuery</p>
+		        	<img src="img/slides/abg-ink.png" />
+		        	<p>Photoshop, HTML, CSS, JavaScript, jQuery</p>
 	        	</div>
 	        </li>
 	        <li>
-	        	<img src="img/slides/pvp1.png" alt="Planet Wars Game">
-	        	<div class="slide-title-large">
-		        	<h4>Planet Wars - Game Art</h4>
-		        	<p>Photoshop, Flash, UX</p>
+	        	<img src="img/slides/wwm.png" alt="Work With Me">
+	        	<div class="caption">
+		        	<h4>Work With Me - Android, iOS</h4>
+		        	<img src="img/slides/wwm-ink.png" />
+		        	<p>Photoshop, Illustrator</p>
 	        	</div>
 	        </li>
 	        <li>
-	        	<img src="img/slides/pvp2.png" alt="Raawr Android App">
-	        	<div class="slide-title-large">
-		        	<h4>Planet Wars - Game Art</h4>
-		        	<p>Photoshop, Flash, UX</p>
+	        	<img src="img/slides/raawr.png" alt="Raawr Android App">
+	        	<div class="caption">
+		        	<h4>Raawr - Android</h4>
+		        	<img src="img/slides/raawr-ink.png" />
+		        	<p>Photoshop, Illustrator, XML</p>
 	        	</div>
 	        </li>
 	        <li>
-	        	<img src="img/slides/luckity1.png" alt="Luckity Website">
-	        	<div class="slide-title-large">
-		        	<h4>Luckity - Web Design</h4>
-		        	<p>Photoshop, Flash, UX, XML</p>
+	        	<img src="img/slides/pvp.png" alt="PvP">
+	        	<div class="caption">
+		        	<h4>Planet Wars - Illustration, Web</h4>
+		        	<img src="img/slides/pvp-ink.png" />
+		        	<p>Photoshop, Flash, HTML, CSS</p>
 	        	</div>
 	        </li>
 	        <li>
-	        	<img src="img/slides/raawr1.png" alt="Raawr Android App">
-	        	<div class="slide-title-large">
-		        	<h4>Raawr - Android App</h4>
-		        	<p>Photoshop, Flash, UX, XML</p>
+	        	<img src="img/slides/luckity.png" alt="Luckity Website">
+	        	<div class="caption">
+		        	<h4>Luckity - Web Design, Game</h4>
+		        	<img src="img/slides/luckity-ink.png" />
+		        	<p>Photoshop, Illustrator, Flash, HTML, CSS, JavaScript</p>
 	        	</div>
 	        </li>
 	        <li>
-	        	<img src="img/slides/raawr2.png" alt="Raawr Android App Cont'd">
-	        	<div class="slide-title-large">
-		        	<h4>Raawr - Android App</h4>
-		        	<p>Photoshop, Flash, UX, XML</p>
+	        	<img src="img/slides/serviceplus.png" alt="Service Plus App">
+	        	<div class="caption">
+		        	<h4>Service Plus - Web App, Website</h4>
+		        	<img src="img/slides/sp-ink.png" />
+		        	<p>Photoshop, Illustrator, HTML, CSS, JavaScript</p>
 	        	</div>
 	        </li>
 	        <li>
-	        	<img src="img/slides/serviceplus.png" alt="Service Plus Web App">
-	        	<div class="slide-title-large">
-		        	<h4>Service Plus - Web</h4>
-		        	<p>Photoshop, UX, HTML, CSS, JS, jQuery</p>
+	        	<img src="img/slides/moodie.png" alt="Little Moodies">
+	        	<div class="caption">
+		        	<h4>Little Moodies - Kickstarter</h4>
+		        	<img src="img/slides/moodie-ink.png" />
+		        	<p>Photoshop, Flash, Premiere, Audition, Fruity Loops Studio</p>
+	        	</div>
+	        </li>
+	        <li>
+	        	<img src="img/slides/raawr2.png" alt="Raawr Illustrations">
+	        	<div class="caption">
+		        	<h4>Raawr - Illustration</h4>
+		        	<img src="img/slides/raawr2-ink.png" />
+		        	<p>Photoshop, Flash</p>
 	        	</div>
 	        </li>
 	    </ul>
+
+	    <ul id="slideshow-pager" class="small-block-grid-4 medium-block-grid-4 large-block-grid-8 medium-centered">
+	    	<li><a href="#"><img class="tile" src="img/slides/abg-thumb.png"/></a></li>
+	    	<li><a href="#"><img class="tile" src="img/slides/wwm-thumb.png"/></a></li>
+	    	<li><a href="#"><img class="tile" src="img/slides/raawr-thumb.png"/></a></li>
+	    	<li><a href="#"><img class="tile" src="img/slides/pvp-thumb.png"/></a></li>
+	    	<li><a href="#"><img class="tile" src="img/slides/luckity-thumb.png"/></a></li>
+	    	<li><a href="#"><img class="tile" src="img/slides/sp-thumb.png"/></a></li>
+	    	<li><a href="#"><img class="tile" src="img/slides/moodie-thumb.png"/></a></li>
+	    	<li><a href="#"><img class="tile" src="img/slides/raawr2-thumb.png"/></a></li>
+	    </ul>
+	    <div class="clearfix"></div>
 	</div>
 	<br>
 
