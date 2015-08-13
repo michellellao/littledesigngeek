@@ -6,15 +6,17 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 	<link rel="shortcut icon" href="ml-fav.ico" type="image/x-icon" />
-    <title>Little Design Geek - Michelle's Portfolio!</title>
+    <title>Little Design Geek - Michelle's Portfolio</title>
 
     <!-- Fonts -->
-	<link href='http://fonts.googleapis.com/css?family=Oxygen:300,700' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Lobster+Two:400' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Raleway:200,300,400,500,700' rel='stylesheet' type='text/css'>
 
     <!-- Style Sheet  -->
 	<link rel="stylesheet" href="css/foundation.css" type="text/css" />
+	<link rel="stylesheet" href="css/textslide.css" type="text/css" />
+	<link rel="stylesheet" href="css/responsiveslides.css" type="text/css" />
 	<link rel="stylesheet" href="css/main.css" type="text/css" />
+
 
     <!-- JavaScript -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -27,183 +29,198 @@
             	manualControls: '#slideshow-pager',
             	speed: 300,
             	timeout: 4500,
-            	nav: true,
+            	nav: false,
+            	pause: true,
+            	pauseControls: true,
             });
         });
     </script>
 </head>
 
 <body>
-<div class="wrapper">
 
-	<!-- Title -->
-	<div id="title" class="third-section">
-		<h2>Hello, I'm</h2>
-		<h1>Little Design Geek</h1>
-		<h5>Design . Development . UI/UX . Art . Music</h5>
+<!-- Nav -->
+<div id="nav" class="hide-for-small-only">
+	<div class="wrapper">
+		<div id="home">
+			<a href="#cover"><img class="top" src="img/icons/top.png" />Little Design Geek</a>
+		</div>
+		<div id="anchors">
+			<a href="#work">Work</a>
+			<a href="#about">About</a>
+			<a href="#contact">Contact</a>
+		</div>
 	</div>
+</div>
 
-	<!-- Slideshow -->
+<!-- Small Nav -->
+<div id="small-nav" class="show-for-small-only">
+	<a href="#cover"><img class="top show-for-small-only" style="display:none;" src="img/icons/top.png" /></a>
+	<a href="#work">Work</a>
+	<a href="#about">About</a>
+	<a href="#contact">Contact</a>
+
+</div>
+
+<!-- Cover -->
+<div id="cover" class="three-quarter-height small-12">
+	<div class="center-content">
+		<img id="profile" src="img/photo/profile.jpg" />
+		<h3>Michelle L. Lao</h3>
+		<!-- sliding Headline -->
+		<section class="cd-intro">
+			<h1 class="cd-headline slide">
+				<span class="cd-words-wrapper">
+					<b class="is-visible">I Create Intuitive and Beautiful Interactions.</b>
+					<b>I Find Delightful Solution to Design Problems.</b>
+					<b>I Design and Build Web & Mobile Interfaces.</b>
+				</span>
+			</h1>
+		</section>
+		<h5>Web & Mobile <span class="semi-bold">Visual & Interaction Designer</span></h5>
+	</div>
+</div>
+
+
+<!-- Work -->
+<div id="work" class="wrapper">
+	<br class="show-for-small-only" />
+	<br class="show-for-small-only" />
 	<div id="slideshow">
 		<ul class="rslides">
 			<li>
-	        	<img src="img/slides/americanbg.png" alt="American Business Group Website">
+	        	<img src="img/work/samsung-full.jpg" alt="Samsung Milk Music">
 	        	<div class="caption">
-		        	<h4>American Business Group - Responsive Site</h4>
-		        	<img src="img/slides/abg-ink.png" />
-		        	<p>Photoshop, HTML, CSS, JavaScript, jQuery</p>
+			        	<h4>Samsung Milk Music</h4>
+			        	<img class="skill" src="img/icons/html.png" />
+			        	<img class="skill" src="img/icons/css.png" />
+			        	<img class="skill" src="img/icons/js.png" />
+			        	<img class="skill" src="img/icons/ps.png" />
+			        	<img class="skill" src="img/icons/ai.png" />
+			        	<img class="skill" src="img/icons/id.png" />
+		        	<a class="hide-for-small-only" href="http://milk.samsung.com/" target="_blank"><img class="btn able" src="img/icons/btn-web.png" /></a>
+		        	<a href="https://play.google.com/store/apps/details?id=com.samsung.mdl.radio&hl=en" target="_blank"><img class="btn able" src="img/icons/btn-gplay-avail.png" /></a>
 	        	</div>
 	        </li>
 	        <li>
-	        	<img src="img/slides/wwm.png" alt="Work With Me">
+	        	<img src="img/work/abg-full.jpg" alt="American Business Group">
 	        	<div class="caption">
-		        	<h4>Work With Me - Android, iOS</h4>
-		        	<img src="img/slides/wwm-ink.png" />
-		        	<p>Photoshop, Illustrator</p>
+		        	<h4>American Business Group</h4>
+		        	<img class="skill" src="img/icons/html.png" />
+		        	<img class="skill" src="img/icons/css.png" />
+		        	<img class="skill" src="img/icons/js.png" />
+		        	<img class="skill" src="img/icons/ps.png" />
+		        	<a href="http://americanbg.com/" target="_blank"><img class="btn able" src="img/icons/btn-web.png" /></a>
 	        	</div>
 	        </li>
 	        <li>
-	        	<img src="img/slides/raawr.png" alt="Raawr Android App">
+	        	<img src="img/work/streamly-full.jpg" alt="Streamly Android App">
 	        	<div class="caption">
-		        	<h4>Raawr - Android</h4>
-		        	<img src="img/slides/raawr-ink.png" />
-		        	<p>Photoshop, Illustrator, XML</p>
+		        	<h4>Streamly Android App</h4>
+		        	<img class="skill" src="img/icons/ps.png" />
+		        	<img class="skill" src="img/icons/ai.png" />
+		        	<img class="btn" src="img/icons/btn-gplay-coming.png" />
 	        	</div>
 	        </li>
 	        <li>
-	        	<img src="img/slides/pvp.png" alt="PvP">
+	        	<img src="img/work/ifixers-full.jpg" alt="iFixers iOS App">
 	        	<div class="caption">
-		        	<h4>Planet Wars - Illustration, Web</h4>
-		        	<img src="img/slides/pvp-ink.png" />
-		        	<p>Photoshop, Flash, HTML, CSS</p>
+		        	<h4>iFixers iOS App</h4>
+		        	<img class="skill" src="img/icons/ps.png" />
+		        	<img class="skill" src="img/icons/ai.png" />
+		        	<img class="btn" src="img/icons/btn-appstore.png" />
 	        	</div>
 	        </li>
 	        <li>
-	        	<img src="img/slides/luckity.png" alt="Luckity Website">
+	        	<img src="img/work/landscape-full.jpg" alt="Landscape Painting">
 	        	<div class="caption">
-		        	<h4>Luckity - Web Design, Game</h4>
-		        	<img src="img/slides/luckity-ink.png" />
-		        	<p>Photoshop, Illustrator, Flash, HTML, CSS, JavaScript</p>
+		        	<h4>Landscape Painting - Day and Night</h4>
+		        	<img class="skill" src="img/icons/ps.png" />
 	        	</div>
 	        </li>
 	        <li>
-	        	<img src="img/slides/serviceplus.png" alt="Service Plus App">
+	        	<img src="img/work/planet-full.jpg" alt="Planet Wars">
 	        	<div class="caption">
-		        	<h4>Service Plus - Web App, Website</h4>
-		        	<img src="img/slides/sp-ink.png" />
-		        	<p>Photoshop, Illustrator, HTML, CSS, JavaScript</p>
-	        	</div>
-	        </li>
-	        <li>
-	        	<img src="img/slides/moodie.png" alt="Little Moodies">
-	        	<div class="caption">
-		        	<h4>Little Moodies - Kickstarter</h4>
-		        	<img src="img/slides/moodie-ink.png" />
-		        	<p>Photoshop, Flash, Premiere, Audition, Fruity Loops Studio</p>
-	        	</div>
-	        </li>
-	        <li>
-	        	<img src="img/slides/raawr2.png" alt="Raawr Illustrations">
-	        	<div class="caption">
-		        	<h4>Raawr - Illustration</h4>
-		        	<img src="img/slides/raawr2-ink.png" />
-		        	<p>Photoshop, Flash</p>
+		        	<h4>Planet Wars</h4>
+		        	<img class="skill" src="img/icons/ps.png" />
 	        	</div>
 	        </li>
 	    </ul>
 
-	    <ul id="slideshow-pager" class="small-block-grid-4 medium-block-grid-4 large-block-grid-8 medium-centered">
-	    	<li><a href="#"><img class="tile" src="img/slides/abg-thumb.png"/></a></li>
-	    	<li><a href="#"><img class="tile" src="img/slides/wwm-thumb.png"/></a></li>
-	    	<li><a href="#"><img class="tile" src="img/slides/raawr-thumb.png"/></a></li>
-	    	<li><a href="#"><img class="tile" src="img/slides/pvp-thumb.png"/></a></li>
-	    	<li><a href="#"><img class="tile" src="img/slides/luckity-thumb.png"/></a></li>
-	    	<li><a href="#"><img class="tile" src="img/slides/sp-thumb.png"/></a></li>
-	    	<li><a href="#"><img class="tile" src="img/slides/moodie-thumb.png"/></a></li>
-	    	<li><a href="#"><img class="tile" src="img/slides/raawr2-thumb.png"/></a></li>
+	    <ul id="slideshow-pager" class="small-block-grid-3 medium-block-grid-3 large-block-grid-6 medium-centered">
+	    	<li><a href="#"><img class="tile" src="img/work/samsung.jpg"/></a></li>
+	    	<li><a href="#"><img class="tile" src="img/work/abg.jpg"/></a></li>
+	    	<li><a href="#"><img class="tile" src="img/work/streamly.jpg"/></a></li>
+	    	<li><a href="#"><img class="tile" src="img/work/ifixers.jpg"/></a></li>
+	    	<li><a href="#"><img class="tile" src="img/work/landscape.jpg"/></a></li>
+	    	<li><a href="#"><img class="tile" src="img/work/planet.jpg"/></a></li>
 	    </ul>
 	    <div class="clearfix"></div>
 	</div>
 	<br>
 
-	<!-- Skills -->
-	<div id="skills">
-		<ul>
-			<li class="large-1 medium-2 small-3 column"><img src="img/skills/ps.png" alt="Photoshop"/></li>
-			<li class="large-1 medium-2 small-3 column"><img src="img/skills/fl.png" alt="Flash"/></li>
-			<li class="large-1 medium-2 small-3 column"><img src="img/skills/ai.png" alt="Illustrator"/></li>
-			<li class="large-1 medium-2 small-3 column"><img src="img/skills/id.png" alt="InDesign"/></li>
-			<li class="large-1 medium-2 small-3 column"><img src="img/skills/pr.png" alt="Premiere"/></li>
-			<li class="large-1 medium-2 small-3 column"><img src="img/skills/au.png" alt="Audition"/></li>
-			<li class="large-1 medium-2 small-3 column"><img src="img/skills/html.png" alt="HTML"/></li>
-			<li class="large-1 medium-2 small-3 column"><img src="img/skills/css.png" alt="CSS"/></li>
-			<li class="large-1 medium-2 small-3 column"><img src="img/skills/js.png" alt="JavaScript"/></li>
-			<li class="large-1 medium-2 small-3 column"><img src="img/skills/jq.png" alt="jQuery"/></li>
-			<li class="large-1 medium-2 small-3 column"><img src="img/skills/ux.png" alt="User Experience Research"/></li>
-			<li class="large-1 medium-2 small-3 column"><img src="img/skills/git.png" alt="GitHub"/></li>
-		</ul>
-		<div class="clearfix"></div>
-	</div>
+</div>
 
-	<!-- Principle -->
-	<div id="principle">
-		<div class="third-section"></div>
-		<h2>My Design Principle</h2><br/>
-		<h1><img src="img/arrow.png"/> Simple, Thoughtful, Fun.</h1>
-		<div class="third-section"></div>
-	</div>
-	
-	<!-- About -->
-	<div id="about" class="section">
-		<h1>About Michelle</h1>
-		<img id="michelle" src="img/michelle.png"/>
-		<br/>
 
-		<div class="large-4 columns front">
-			<h3>How I Started</h3>
-			<hr/>
-			<p>At age 5, I fell in love with making cool looking things when my crab house water color won the local contest.</p>
-			<p><span class="bold">At age 14, I started doing art and design for web</span> with <a href="http://www.linkedin.com/in/dfguo" target="_blank">an awesome developer</a>; I've been doing fun art and design projects ever since.</p>
+<!-- About -->
+<div id="about">
+	<div class="wrapper">
+		<br class="show-for-small-only" />
+		<div class="medium-6 large-6 column">
+			<h2>What I Do</h2>
+			<p>Designing for the web since 2004, I‘m a self-taught full stack designer and a self-starter who loves getting involved in fun projects. 
+			</p>
+			<p>I keep up to date on human-computer interaction studies. I find effective, clean, and delightful solutions to meet design challenges.
+			</p>
+			<p>I stand by simplicity and consistency. I am methodical and organized. Having design methods enables me to deliver fast and consistent work.
+			</p>
+			<br />
 		</div>
-		<div class="large-4 columns front">
-			<h3>What I do</h3>
-			<hr/>
-			<p>I design simple, thoughtful, and fun interactions. I love getting into the user's mind and designing something that is <span class="bold">intuitive and beautiful.</span></p>
-			<p>I'm obsessed with games and gamification. I follow game industry news, and I make games as a hobby.</p>
+		<div class="medium-6 large-6 column">
+			<h2>What Else</h2>
+			<p>I am a traveler, rock climber, hiker, and MMA fighter.
+			</p>
+			<p>I play guitar and sing at the local Open Mic at Red Rock Cafe, and I’m known as the girl with the looper.
+			</p>
+			<p>I'm interested in games and gamification. I follow the game industry news, and I make games as a hobby.
+			</p>
 		</div>
-		<div class="large-4 columns front">
-			<h3>What Else?</h3>
-			<hr/>
-			<p>When I’m not geeking out learning new design and tech stuff, I’m geeking out making or playing <span class="bold">video games and music.</span></p>
-			<p>I play at the local Open Mic at <a href="http://www.redrockcoffee.org/" target="_blank">Red Rock Cafe</a> almost every Monday, and I'm known as the girl with the <a href="http://www.voxamps.com/us/pedals/lillooper/" target="_blank">looper</a>.</p>
-		</div>
-		<div class="clearfix"></div>
 	</div>
+</div>
 
-</div> <!-- End of Wrapper -->
 
-<!-- Footer -->
-<div id="footer" class="third-section">
-    <div id="contact">
-    	<h1>Say Hello!</h1>
-    	<br/>
-    	<ul>
-    		<li class="small-6 medium-4 large-4 columns"><a target="_blank" class="front" href="https://www.facebook.com/mllao"><img id="fb" src="img/blank.png"></a></li>
-    		<li class="small-6 medium-4 large-4 columns"><a target="_blank" href="http://www.linkedin.com/pub/michelle-lao/15/310/180"><img id="in" src="img/blank.png"></a></li>
-    		<li class="small-12 small-centered medium-4 large-4 columns"><a><img id="email" src="img/blank.png"></a>
-    		</li>
-    		<div class="small-12 medium-4 large-4 columns"><span id="myemail">michellellao.ai@gmail.com</span></div>
-    	</ul>
-    	
-    	<div class="clearfix"></div>
-    </div>
+<!-- Contact -->
+<div id="contact">
+	<div id="contact-content" class="wrapper large-8 column large-centered">
+		<h2>Say Hello</h2>
+		<p id="myemail">michellellao.ai@gmail.com</p>
+		<ul class="small-block-grid-4 medium-block-grid-4 large-block-grid-4">
+			<li><a href="https://www.linkedin.com/in/michellellao" target="_blank"><img src="img/icons/btn-linkedin.png" /></a></li>
+			<li><a href="https://www.facebook.com/mllao" target="_blank"><img src="img/icons/btn-facebook.png" /></a></li>
+			<li><a id="email" href="#contact"><img src="img/icons/btn-email.png" /></a></li>
+			<li><a href="MichelleLao_Resume.pdf" target="_blank"><img src="img/icons/btn-resume.png" /></a></li>
+		</ul>	
+	</div>
+	<div class="clearfix"></div>
 </div>
 
 <!-- Copyright -->
-<div id="copyright" class="large-12 columns">
-    © 2014 Michelle Lao.   
+<div id="copyright">
+	<p>© 2015 Michelle Lao.</p>
 </div>
 
-</body>
+<script src="js/textslide.js"></script>
+<script src="js/flowtype.js"></script>
 
+<script>
+	$('body').flowtype({
+		minimum   : 500,
+		maximum   : 1600,
+		minFont   : 14,
+		maxFont   : 24,
+		fontRatio : 45
+	});
+</script>
+
+</body>
 </html>

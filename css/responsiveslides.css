@@ -1,0 +1,150 @@
+/* Slideshow Responsive*/
+.rslides {
+	position: relative;
+	list-style: none;
+	overflow: hidden;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.rslides li {
+	-webkit-backface-visibility: hidden;
+	position: absolute;
+	display: none;
+	width: 100%;
+	left: 0;
+	top: 0;
+}
+
+.rslides li:first-child {
+	position: relative;
+	display: block;
+	float: left;
+}
+
+.rslides img {
+	display: block;
+	height: auto;
+	float: left;
+	width: 100%;
+	border: 0;
+}
+
+/* Page Specifics */
+#slideshow {
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.8);
+	padding: 2%;
+}
+
+.caption {
+	position: absolute;
+	display: block;
+	z-index: 2;
+	background: linear-gradient(to right, rgba(30, 30, 0, 0.8) 20%, rgba(200, 200, 200, 0.65) 80%);
+	bottom: 0;
+	margin: 0;
+	line-height: 1.5em;
+	color: #fff;
+	width: 100%;
+	max-height: 5em;
+	text-align: left;
+}
+
+.caption h4 {
+	text-align: left;
+	float: left;
+	position: relative;
+	padding: 0.65em;
+	padding-right: 0.4em;
+}
+
+.caption img.skill {
+	position: relative;
+	display: inline;
+	max-width: 3em;
+	float: left;
+	padding: 0.8em 0.25em;
+	margin: 0 0.15em;
+}
+
+.caption img.btn {
+	position: relative;
+	display: inline;
+	max-width: 180px;
+	float: right;
+	margin: 0;
+	padding: 0.35em;
+	opacity: 0.6;
+	transition: all 0.3s ease 0.02s;
+	-webkit-backface-visibility:hidden;
+}
+
+.caption img.able:hover {
+	opacity: 1;
+}
+
+
+#slideshow-pager .rslides_here a img {
+  	box-shadow: 0 0 0.25em 0.1em rgba(255, 255, 255, 0.5);
+  	-ms-transform: scale(1.05,1.05); /* IE 9 */
+    -webkit-transform: scale(1.05,1.05); /* Safari */
+    transform: scale(1.05,1.05);
+  	opacity: 1;
+}
+
+#slideshow-pager img {
+    opacity: 1;
+}
+
+#slideshow-pager li { padding: 1em 0.5em 0; }
+
+
+
+
+/* Small & Medium Screen */
+@media only screen and (max-width: 64em) {
+	.caption {
+		position: relative;
+		display: inline-block;
+		z-index: 2;
+		background: linear-gradient(to right, rgba(60, 60, 60, 1) 20%, rgba(200, 200, 200, 1) 80%);
+		top: 0;
+		margin: 0;
+		line-height: 1.5em;
+		color: #fff;
+		width: 100%;
+		text-align: center;
+		height: 5em;
+	}
+
+
+	.caption h4 {
+		position: relative;
+		padding: 0.65em 0 0.35em;
+		padding-right: 0.4em;
+		font-size: 1em;
+		float: none;
+		text-align: center;
+	}
+
+	.caption img.skill {
+		position: relative;
+		display: inline-block;
+		max-width: 1.75em;
+		padding: 0.05em;
+		margin: 0 0.1em 0.1em;
+		float: none;
+	}
+
+	.caption img.btn {
+		max-width: 90px;
+		display: inline-block;
+		float: left;
+		margin: 0;
+		padding: 0.1em;
+		opacity: 0.6;
+		float: none;
+	}
+}
