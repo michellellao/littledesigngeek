@@ -26,7 +26,7 @@
 /* xslide  */
 .cd-headline.slide span {
   display: inline-block;
-  padding: .2em 0;
+  padding: .1em 0;
 }
 .cd-headline.slide .cd-words-wrapper {
   overflow: hidden;
@@ -42,6 +42,7 @@
   -webkit-animation: slide-in 0.4s;
   -moz-animation: slide-in 0.4s;
   animation: slide-in 0.4s;
+  text-align: center;
 }
 .cd-headline.slide b.is-hidden {
   -webkit-animation: slide-out 0.4s;
