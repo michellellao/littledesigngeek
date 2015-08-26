@@ -84,6 +84,9 @@ p {
 	font-weight: 500;
 }
 
+img {max-width: 100%}
+
+
 img.scroll {
 	width: 10%;
 	max-width: 60px;
@@ -113,6 +116,7 @@ img.able:hover {
   	top: 50%;
   	left: 50%;
   	transform: translate(-50%, -50%);
+  	-webkit-transform: translate(-50%, -50%);
   	width: 100%;
 }
 
@@ -320,10 +324,17 @@ img#profile {
 	text-shadow: none;
 }
 
-#work-detail a {overflow: hidden; display:inline-block;}
+#work-detail > * > div {overflow: hidden;}
+
+#work-detail a {
+	overflow: hidden;
+	display:inline-block;
+	max-width: 100%;
+}
 
 #work-detail a img.thumb {
 	padding: 0;
+	max-width: 100%;
 	transition: all 0.3s ease-in 0s;
 	-webkit-backface-visibility:hidden;
 	-webkit-filter: grayscale(0%);
