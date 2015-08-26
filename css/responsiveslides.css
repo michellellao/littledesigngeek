@@ -4,7 +4,6 @@
 	list-style: none;
 	overflow: hidden;
 	width: 100%;
-	padding: 0;
 	margin: 0;
 }
 
@@ -34,8 +33,8 @@
 /* Page Specifics */
 #slideshow {
 	width: 100%;
-	background-color: rgba(0, 0, 0, 0.8);
-	padding: 2%;
+	max-width: 1600px;
+	margin: 0.625em auto;
 }
 
 .caption {
@@ -70,19 +69,8 @@
 }
 
 .caption img.btn {
-	position: relative;
-	display: inline;
-	max-width: 180px;
 	float: right;
-	margin: 0;
 	padding: 0.35em;
-	opacity: 0.6;
-	transition: all 0.3s ease 0.02s;
-	-webkit-backface-visibility:hidden;
-}
-
-.caption img.able:hover {
-	opacity: 1;
 }
 
 

@@ -91,6 +91,21 @@ img.scroll {
 	opacity: 0.75;
 }
 
+img.btn {
+	position: relative;
+	display: inline;
+	max-width: 180px;
+	margin: 0;
+	padding: 0 0.5em 0 0;
+	opacity: 0.6;
+	transition: all 0.3s ease 0.02s;
+	-webkit-backface-visibility:hidden;
+}
+
+img.able:hover {
+	opacity: 1;
+}
+
 
 /* Layouts */
 .center-content {
@@ -287,17 +302,129 @@ img#profile {
 	background: url('../img/photo/quote.jpg') center center no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
-	margin: 3em 0;
+	margin: 3em 0 0;
   }
 
 
 /* Work */
 
-#work{
+#work {
 	min-height: 100%;
-	padding: 5% 5% 0;
+	padding: 0;
 }
 
+#slideshow-container {background-color: #000;}
+
+#work h1 {
+	color: #4c5e66;
+	text-shadow: none;
+}
+
+#work-detail a {overflow: hidden; display:inline-block;}
+
+#work-detail a img.thumb {
+	padding: 0;
+	transition: all 0.3s ease-in 0s;
+	-webkit-backface-visibility:hidden;
+	-webkit-filter: grayscale(0%);
+	filter: grayscale(0%)
+	display: block;
+}
+
+#work-detail a:hover img.thumb {
+	-webkit-filter: grayscale(60%);
+	filter: grayscale(60%)
+	-moz-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+#work-detail a .view-project {
+	position: absolute;
+	color: #fff;
+	z-index: 10;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+	padding: 0;
+	width: 100%;
+	height: 95%;
+}
+
+#work-detail a .view-project > .inside {
+	display: inline-block;
+	margin-bottom: -1em;
+	z-index: 11;
+	background:linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 75%);
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+		-webkit-transition: all 300ms ease-out;
+		-moz-transition: all 300ms ease-out;
+		-o-transition: all 300ms ease-out;
+		-ms-transition: all 300ms ease-out;	
+		transition: all 300ms ease-out;
+}
+
+#work-detail a:hover .view-project > .inside {
+	opacity: 1;
+}
+
+
+#work-detail .view-project > .inside h3 {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	-webkit-transition: all 300ms ease-out;
+	-moz-transition: all 300ms ease-out;
+	-o-transition: all 300ms ease-out;
+	-ms-transition: all 300ms ease-out;	
+	transition: all 300ms ease-out;
+	margin: 0 25%;
+	padding: 0.35em 0.5em; 
+	border-radius: 4px;
+	border: 2px solid #fff;
+	font-weight: 400;
+	font-size: 1.15em;
+}
+
+#work-detail .view-project > .inside h3:hover {background-color: rgba(0, 0, 0, 0.35);}
+
+.thumb-info {
+	text-align: left;
+	margin: -0.5em 0 1.5em;
+	padding: 0.5em 0.75em;
+	background-color: #fff;
+}
+
+#work-detail h2 {
+	font-size: 1.1em;
+	text-align: left;
+	text-shadow: none;
+	color: #4c5e66;
+	padding: 0;
+}
+
+#work-detail > * > * > a.link {
+	font-size: 0.75em;
+	font-weight: 500;
+	padding: 0.25em 0.5em;
+	background-color: #4c5e66;
+	border-radius: 4px;
+	color: #fff;
+}
+
+#work-detail > * > * > a.link:hover { background-color: #14adcc;}
+
+#work-detail h1 {padding: 2em 0 1em; color: #4c5e66; font-size: 2em; text-shadow:none; }
+
+/* Project Detail & Content */
+.project-detail h2 {padding: 0.5em 0 0; color: #4c5e66; text-shadow:none; }
+.project-detail h3 {padding: 0 0 1em; color: #829199; font-size: 1em; font-weight: 400; text-shadow:none; }
+.project-detail p {text-align: center; padding: 0 0.5em;}
+.project-content {margin: 2em 0;}
+.project-content img {padding: 0.625em 1em 3em;}
 
 /* Contact */
 
@@ -368,8 +495,9 @@ img#profile {
 	h1 {font-size: 250%;}
 	#cover h2 {font-size: 110%;}
 	#cover {height: 100%;}
-	#about > .wrapper {padding: 0;}
+	.wrapper {padding: 0;}
 	#about h2 {font-size: 150%}
 	#quote {width: 100%;}
 	#quote h2 {font-size: 1.5em;}
+	#work {padding: 5% 0 0;}
 }

@@ -59,7 +59,7 @@ body {
 
 body {
   background: #aaa;
-  color: #4c5e66;
+  color: #829199;
   cursor: auto;
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-style: normal;
@@ -2400,9 +2400,11 @@ td {
 
 /* Default Link Styles */
 a {
-  color: #2ba6cb;
+  color: #14adcc;
   line-height: inherit;
-  text-decoration: none; }
+  text-decoration: none;
+  transition: all 0.3s ease 0s;
+  -webkit-backface-visibility:hidden; }
   a:hover, a:focus {
     color: #258faf; }
   a img {
