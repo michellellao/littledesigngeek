@@ -21,7 +21,6 @@ body, div {
 body { /*content including background */
 	background:#eee;
 	width: 100%;
-	text-align: center;
 }
 
 .wrapper {
@@ -62,7 +61,6 @@ h3 { /* Name Title */
 	font-size: 1.5em;
 	font-weight: 200;
 	padding: 0.5em 0 0;
-	line-height: 1.25;
 }
 
 h4 { /* Project Title */
@@ -71,9 +69,9 @@ h4 { /* Project Title */
 }
 
 h5 { /* Thin Title */
-	font-size: 1.125em;
+	font-size: 0.6em;
 	font-weight: 300;
-	padding: 0.125em 0 0;
+	padding: 0;
 }
 
 
@@ -88,34 +86,19 @@ p {
 	font-weight: 800;
 }
 
+.text-left {
+	text-align: left;
+}
+
+.text-right {
+	text-align: right;
+}
+
 .kern-tight {
 	letter-spacing: -0.03em;
 }
 
 img {max-width: 100%}
-
-
-img.scroll {
-	width: 10%;
-	max-width: 60px;
-	margin: 1em;
-	opacity: 0.75;
-}
-
-img.btn {
-	position: relative;
-	display: inline;
-	max-width: 180px;
-	margin: 0;
-	padding: 0 0.5em 0 0;
-	opacity: 0.6;
-	transition: all 0.3s ease 0.02s;
-	-webkit-backface-visibility:hidden;
-}
-
-img.able:hover {
-	opacity: 1;
-}
 
 
 /* Layouts */
@@ -129,6 +112,7 @@ img.able:hover {
 }
 
 .clearfix {z-index: -10;}
+
 
 /* Sections */
 
@@ -153,7 +137,7 @@ img.able:hover {
 #nav img.top {
 	position: relative;
 	top: -0.1em;
-	width: 12%;
+	width: 1.75em;
 	padding-right: 0.5em;
 }
 
@@ -170,21 +154,13 @@ img.able:hover {
 	transition: all 0.2s ease 0.1s;
 }
 
-#nav a#nav-work:hover {
-	color: #f26161;
-}
+#nav a#nav-work:hover {color: #f26161;}
 
-#nav a#nav-about:hover, #small-nav a:hover {
-	color: #6bcdc4;
-}
+#nav a#nav-about:hover {color: #6bcdc4;}
 
-#nav a#nav-contact:hover, #small-nav a:hover {
-	color: #f6bb43;
-}
+#nav a#nav-contact:hover {color: #f6bb43;}
 
-#small-nav {
-	text-align: center;
-}
+#small-nav {text-align: center;}
 
 #small-nav img.top {
 	position: relative;
@@ -212,7 +188,7 @@ img.able:hover {
 
 .banner-text {
 	z-index: 1;
-	position:absolute;
+	position: absolute;
     top: 20%;
     padding: 0 0 0 15%;
     text-align: left;
@@ -222,14 +198,6 @@ img.able:hover {
 
 .banner-text h2, .banner-text h4 {
 	color: #fff;
-}
-
-.text-left {
-	text-align: left;
-}
-
-.text-right {
-	text-align: right;
 }
 
 
@@ -377,15 +345,15 @@ img.able:hover {
 }
 
 #quote1 {
-	background: url('../img/photo/journeybg1.png') center center no-repeat;
+	background: #83896f url('../img/photo/journeybg1.png') center center no-repeat;
 	background-attachment: fixed;
-	background-size: auto;
+	background-size: cover;
 }
 
 #quote2 {
-	background: url('../img/photo/journeybg2.png') center center no-repeat;
+	background: #36253c url('../img/photo/journeybg2.png') center center no-repeat;
 	background-attachment: fixed;
-	background-size: auto;
+	background-size: cover;
 }
 
 
@@ -540,11 +508,11 @@ img.able:hover {
 
 #contact h1 {
 	color: #fff;
-	padding-bottom: 0.5em;
+	padding: 1.25em 0 1em;
 }
 
 img#profile {
-	width: 10em;
+	width: 7em;
 	border-radius: 50%;
 }
 
@@ -552,8 +520,8 @@ img#profile {
 	opacity: 0.67;
 	transition: all 0.3s ease 0s;
 	-webkit-backface-visibility:hidden;
-	font-size: 5em;
-	margin: 0.5em 0;
+	font-size: 4em;
+	margin: 0.75em 0;
 }
 
 #contact .contact-icon:hover {
@@ -575,14 +543,6 @@ img#profile {
 	color: #f6bb43;
 }
 
-#contact p#myemail {
-	text-align: center;
-	color: #c3dde5;
-	margin: 0 0 0.5em;
-	display: none;
-}
-
-
 #copyright {
 	background-color: #212121;
 	color: #fff;
@@ -593,31 +553,39 @@ img#profile {
 	padding: 0.5em;
 	text-align: center;
 	font-size: 0.6em;
-
-
-@media only screen and (max-width: 75em) {
-	#about h2 {font-size: 110%;}
 }
+
 
 /* Medium screen */
 @media only screen and (max-width: 64em) {
-	#contact {min-height: 40%;}
-	#about p {font-size: 90%;}
-	#about p.label {margin-top: -0.2em;}
+
 }
 
 
 /* Small screen */
 @media only screen and (max-width: 40em) { 
-	html {font-size: 90%;}
-	p {font-size: 110%;}
-	img#profile {width: 50%;}
-	h1 {font-size: 250%;}
-	#cover h2 {font-size: 110%;}
-	#cover {height: 100%;}
-	.wrapper {padding: 0;}
-	#about h2 {font-size: 150%}
-	#quote {width: 100%;}
-	#quote h2 {font-size: 1.5em;}
+	.wrapper {padding: 0; margin: 0;}
 	#work {padding: 5% 0 0;}
+	img#profile {
+		width: 10em;
+		border-radius: 50%;
+	}
+	#contact .contact-icon {font-size:3em;}
+
+	.bgslide-small {
+		width: 100%;
+		height: 60%;
+		top: 0;
+		left: 0;
+		z-index: -1;
+	}
+
+	.banner-text {
+	    top: 47.5%;
+	    padding: 0;
+	}
+	.banner-text h2, .banner-text h4 {
+		text-align: center;
+		text-shadow: none;
+	}
 }
