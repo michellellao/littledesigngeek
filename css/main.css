@@ -154,6 +154,8 @@ img {max-width: 100%}
 	transition: all 0.2s ease 0.1s;
 }
 
+#small-nav a {font-size:1.5em;}
+
 #nav a#nav-work:hover {color: #f26161;}
 
 #nav a#nav-about:hover {color: #6bcdc4;}
@@ -342,6 +344,7 @@ img {max-width: 100%}
 	display: block;
 	padding: 1em;
 	color: #fff;
+	text-align: center;
 }
 
 #quote1 {
@@ -375,7 +378,7 @@ img {max-width: 100%}
 }
 
 #about p {
-	padding: 0.1em 0.5em 1em 0.75em;
+	padding: 0.1em 0.5em 1em 1em;
 	font-size: 0.6em;
 }
 
@@ -384,7 +387,7 @@ img {max-width: 100%}
 	height: 2px;
 	border: 0;
 	border-top: 2px solid #f4aa32;
-	margin: 0.5em;
+	margin: 0.25em 0.5em;
 	padding: 0;
 }
 
@@ -406,10 +409,6 @@ img {max-width: 100%}
 	top: -0.1em;
 	width: 2.25em;
 	padding-right: 0.5em;
-}
-
-#about h5.skill-spacer {
-	height: 2.75em;
 }
 
 #about .what-else #what-else-text {
@@ -559,18 +558,24 @@ img#profile {
 /* Medium screen */
 @media only screen and (max-width: 64em) {
 
+	#about p {font-size: 0.8em; padding-left: 0.5em;}
+
+	#about h5 {font-size: 0.8em;}
+
 }
 
 
 /* Small screen */
-@media only screen and (max-width: 40em) { 
+@media only screen and (max-width: 40em) {
+
+	h4 {font-size: inherit;}
+
 	.wrapper {padding: 0; margin: 0;}
 	#work {padding: 5% 0 0;}
 	img#profile {
 		width: 10em;
 		border-radius: 50%;
 	}
-	#contact .contact-icon {font-size:3em;}
 
 	.bgslide-small {
 		width: 100%;
@@ -584,8 +589,14 @@ img#profile {
 	    top: 47.5%;
 	    padding: 0;
 	}
-	.banner-text h2, .banner-text h4 {
-		text-align: center;
-		text-shadow: none;
+	.banner-text h2, .banner-text h4 {text-align: center;}
+
+	.banner-text h4 {font-size:0.9em;}
+
+	.quote > * > h2 {margin: 0 10%;}
+
+	#contact .contact-icon {
+		opacity: 1;
+		font-size:3em;
 	}
 }
