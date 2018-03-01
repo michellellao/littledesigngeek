@@ -21,7 +21,6 @@
 	<link rel="stylesheet" href="css/textslide.css" type="text/css" />
 	<link rel="stylesheet" href="css/responsiveslides.css" type="text/css" />
 	<link rel="stylesheet" href="css/main.css" type="text/css" />
-
 	<link rel="stylesheet" href="css/jquery.fadeshow-0.1.1.min.css" />
 
 
@@ -30,6 +29,8 @@
 	<script language="JavaScript" src="js/foundation.min.js" type="text/javascript"></script>
 	<script type="text/javascript" src="js/script.js"></script>
 	<script src="js/responsiveslides.min.js"></script>
+
+	<!-- Responsie Slides -->
     <script>
         $(function() {
             $(".rslides").responsiveSlides({
@@ -42,6 +43,7 @@
             });
         });
     </script>
+
 </head>
 
 <body>
@@ -73,18 +75,20 @@
 </div>
 
 <!-- Banner -->
-	<div id="banner" class="bgslide small-12"></div>
-	<div class="banner-text small-12 medium-6 column">
-		<h2 class="text-left">I Create Engaging & Beautiful UIs.
-		</h2>
-		<h4 class="text-left">I make <span class="bold">web & mobile</span> interactions <br />
-			easier and more fun <br />
-			for <span class="bold txt-rotate"
-     			data-period="2000"
-     			data-rotate='[ "millions of users.", "an international audience.", "your next awesome project." ]'">	
-     			</span>
-		</h4>
-	</div>
+<div id="banner" class="bgslide small-12 hide-for-small-only"></div>
+<div id="banner-small" class="bgslide-small small-12 show-for-small-only"></div>
+
+<div class="banner-text small-12 medium-6 column">
+	<h2>I Create Engaging & Beautiful UIs.
+	</h2>
+	<h4>I make <span class="bold">web & mobile</span> interactions <br class="hide-for-small-only"/>
+		easier and more fun for <br />
+		<span class="bold txt-rotate"
+ 			data-period="2000"
+ 			data-rotate='[ "millions of users.", "an international audience.", "your next awesome project." ]'">	
+ 		</span>
+	</h4>
+</div>
 
 <script src="js/jquery-1.11.2.min.js" type="text/javascript"></script>
 <script src="js/jquery.fadeshow-0.1.2.min.js" type="text/javascript"></script>
@@ -99,6 +103,22 @@ $(function(){
 				 'img/work/banner-shield.png',
 				 'img/work/banner-samsung.png',
 				 'img/work/banner-abg.png',
+				]
+		});
+	});
+</script>
+
+<script type="text/javascript">
+$(function(){
+	var fadeShow = $(".bgslide-small").fadeShow({
+		correctRatio: true,
+		shuffle: false,
+		speed: 7000,
+		images: ['img/work/smallbanner-nvgames.png',
+				 'img/work/smallbanner-gfe.png',
+				 'img/work/smallbanner-shield.png',
+				 'img/work/smallbanner-samsung.png',
+				 'img/work/smallbanner-abg.png',
 				]
 		});
 	});
@@ -358,32 +378,35 @@ $(function(){
 
 
 <!-- Contact -->
-<div id="contact" class="wrapper">
-	<div id="contact-content" class="large-10 small-12 column large-centered">
+<div id="contact">
+	<div id="contact-content" class="small-10 column small-centered wrapper">
 		<h1>Get In Touch</h1>
-		<p id="myemail">michellellao.ai@gmail.com</p>
-		<ul class="small-block-grid-4">
-			<li class="text-left">
-				<img id="profile" src="img/photo/profile.jpg" />
-			</li>
-			<li id="linkedin">
-				<a href="https://www.linkedin.com/in/michellellao" target="_blank">
-					<i class="fab fa-linkedin contact-icon"></i>
-				</a>
-			</li>
-			<li id="email">
-				<a href="https://www.linkedin.com/in/michellellao" target="_blank">
-					<i class="fas fa-envelope contact-icon"></i>
-				</a>
-			</li>
-			<li id="resume">
-				<a href="https://www.linkedin.com/in/michellellao" target="_blank">
-					<i class="fas fa-file-alt contact-icon"></i>
-				</a>
-			</li>
-		</ul>
-		<br/ >
+		<div class="small-12 column">
+			<img id="profile" src="img/photo/profile.jpg" />
+		</div>
+		<div class="large-8 medium-10 small-8 column small-centered">
+			<ul class="small-block-grid-3">
+				<li id="linkedin">
+					<a href="https://www.linkedin.com/in/michellellao" target="_blank">
+						<i class="fab fa-linkedin contact-icon"></i>
+					</a>
+				</li>
+				<li id="email">
+					<a href="https://www.linkedin.com/in/michellellao" target="_blank">
+						<i class="fas fa-envelope contact-icon"></i>
+					</a>
+				</li>
+				<li id="resume">
+					<a href="https://www.linkedin.com/in/michellellao" target="_blank">
+						<i class="fas fa-file-alt contact-icon"></i>
+					</a>
+				</li>
+			</ul>
+			
+			
+		</div>
 	</div>
+	<br/ >
 	<div class="clearfix"></div>
 </div>
 
