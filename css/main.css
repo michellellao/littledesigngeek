@@ -124,7 +124,7 @@ img {max-width: 100%}
 	top: 0;
 	z-index: 10;
 	width: 100%;
-	padding: 0.6em 0 0.4em;
+	padding: 0 0 0.4em;
 	margin: 0;
 	font-size: 0.8em;
 	color: #fff;
@@ -134,15 +134,22 @@ img {max-width: 100%}
 	float: left;
 }
 
-#nav img.top {
+#nav .top {
+	top: 0.5em;
 	position: relative;
-	top: -0.1em;
-	width: 1.75em;
-	padding-right: 0.5em;
+	width: 2em;
+	padding-right: 0.25em;
+	fill: currentColor;
 }
 
 #nav #anchors {
 	float: right;
+	padding-top: 0.7em;
+}
+
+#small-nav #anchors {
+	float: right;
+	padding-top: 0;
 }
 
 #nav a, #small-nav a {
@@ -154,7 +161,9 @@ img {max-width: 100%}
 	transition: all 0.2s ease 0.1s;
 }
 
-#small-nav a {font-size:1.5em;}
+#small-nav a {font-size:1.75em;}
+
+#nav a#nav-banner:hover {color: #4b8cdc;}
 
 #nav a#nav-work:hover {color: #f26161;}
 
@@ -164,11 +173,12 @@ img {max-width: 100%}
 
 #small-nav {text-align: center;}
 
-#small-nav img.top {
+#small-nav svg.top {
+	top: 0.5em;
 	position: relative;
-	top: -0.1em;
-	width: 1.75em;
-	padding-right: 0.5em;
+	width: 2em;
+	padding: 0;
+	fill: currentColor;
 }
 
 #nav-spacer {
@@ -499,7 +509,7 @@ img {max-width: 100%}
 /* Contact */
 
 #contact {
-	min-height: 50%;
+	min-height: 40%;
 	background: #121212 url('../img/photo/star-bg.png');
 }
 
@@ -558,9 +568,15 @@ img#profile {
 /* Medium screen */
 @media only screen and (max-width: 64em) {
 
-	#about p {font-size: 0.8em; padding-left: 0.5em;}
+	#about img.icon {
+		padding: 0 2.5em;
+	}
+
+	#about p {font-size: 0.75em; padding-left: 0.8em;}
 
 	#about h5 {font-size: 0.8em;}
+
+	#contact .contact-icon {opacity: 1;}
 
 }
 
@@ -571,7 +587,13 @@ img#profile {
 	h4 {font-size: inherit;}
 
 	.wrapper {padding: 0; margin: 0;}
+
+	#nav-spacer {
+		height: 8em;
+	}
+
 	#work {padding: 5% 0 0;}
+
 	img#profile {
 		width: 10em;
 		border-radius: 50%;
@@ -586,7 +608,7 @@ img#profile {
 	}
 
 	.banner-text {
-	    top: 47.5%;
+	    top: 58%;
 	    padding: 0;
 	}
 	.banner-text h2, .banner-text h4 {text-align: center;}
@@ -595,8 +617,12 @@ img#profile {
 
 	.quote > * > h2 {margin: 0 10%;}
 
-	#contact .contact-icon {
-		opacity: 1;
-		font-size:3em;
+	#about img.icon {
+		padding: 0.5em 2em;
 	}
+
+	#about p {font-size: 0.8em; padding-left: 0.5em;}
+
+	#contact .contact-icon {font-size:3em;}
+
 }
