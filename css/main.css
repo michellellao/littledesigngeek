@@ -425,62 +425,68 @@ img {max-width: 100%}
 	padding-right: 2em;
 }
 
-.bar {
-	top: 0.8em;
-	height: 1.2em;
-	background: rgba(76, 93, 102, 0.2);
-	width: 100%
-}
-
-.fill {
-	height: 1.2em;
-	background:#ffb640;
-	overflow: hidden;
-}
-
-#about p.label {
-	color: #ffffff;
-	font-weight: 500;
-	text-shadow: 1px 1px 0 rgba(229, 115, 0, 0.75);
-	padding: 0.05em 0.5em;
-}
-
-.width-60 {width: 60%;}
-.width-80 {width: 80%;}
-.width-90 {width: 90%;}
-.width-100 {width: 100%;}
-
-.fill.start {
-	width: 0px;
-	background: #ffb640;
-	-webkit-animation: fill-100 1.5s ease-out forwards;
-	   -moz-animation: fill-100 1.5s ease-out forwards;
-	    -ms-animation: fill-100 1.5s ease-out forwards;
-	     -o-animation: fill-100 1.5s ease-out forwards;
-	        animation: fill-100 1.5s ease-out forwards;
-}
-@-moz-keyframes fill-100 {
-    0% {
-        width: 0px;
-    }
-
-    100% {
-        width: 100%;
-    }
-}
-@-webkit-keyframes fill-100{
-	0% {
-	    width: 0px;
-	}
-
-	100% {
-	    width: 100%;
-	}
-}
-
-#about .what-else h2 {color: #14adcc;}
-
 #red-rock-video {margin: 0.25rem;}
+
+
+/* Contact */
+
+#contact {
+	min-height: 40%;
+	background: #121212 url('../img/photo/star-bg.png');
+}
+
+#contact-content {z-index: 10;}
+
+#contact h1 {
+	color: #fff;
+	padding: 1.25em 0 1em;
+}
+
+img#profile {
+	width: 7em;
+	border-radius: 50%;
+}
+
+#contact a {opacity: 0.67; font-size: 1em; font-weight: 700;}
+
+#contact .contact-icon {
+	opacity: 1;
+	transition: all 0.3s ease 0s;
+	-webkit-backface-visibility:hidden;
+	font-size: 4em;
+	margin: 0.75em 0 0.1em;
+}
+
+#contact a:hover {
+	opacity: 1;
+}
+
+#contact #linkedin {
+}
+
+#contact #linkedin a, #contact #linkedin .contact-icon {
+	color: #007bb6;
+}
+
+#contact #email a, #contact #email .contact-icon {
+	color: #d73d4c;
+}
+
+#contact #resume a, #contact #resume .contact-icon {
+	color: #f6bb43;
+}
+
+#copyright {
+	background-color: #212121;
+	color: #fff;
+}
+
+#copyright > p {
+	margin: 0;
+	padding: 0.5em;
+	text-align: center;
+	font-size: 0.6em;
+}
 
 
 /* Project Detail & Content */
@@ -506,77 +512,20 @@ img {max-width: 100%}
 }
 
 
-/* Contact */
-
-#contact {
-	min-height: 40%;
-	background: #121212 url('../img/photo/star-bg.png');
-}
-
-#contact-content {z-index: 10;}
-
-#contact h1 {
-	color: #fff;
-	padding: 1.25em 0 1em;
-}
-
-img#profile {
-	width: 7em;
-	border-radius: 50%;
-}
-
-#contact .contact-icon {
-	opacity: 0.67;
-	transition: all 0.3s ease 0s;
-	-webkit-backface-visibility:hidden;
-	font-size: 4em;
-	margin: 0.75em 0;
-}
-
-#contact .contact-icon:hover {
-	opacity: 1;
-}
-
-#contact #linkedin {
-}
-
-#contact #linkedin .contact-icon {
-	color: #007bb6;
-}
-
-#contact #email .contact-icon {
-	color: #d73d4c;
-}
-
-#contact #resume .contact-icon {
-	color: #f6bb43;
-}
-
-#copyright {
-	background-color: #212121;
-	color: #fff;
-}
-
-#copyright > p {
-	margin: 0;
-	padding: 0.5em;
-	text-align: center;
-	font-size: 0.6em;
-}
-
-
 /* Medium screen */
 @media only screen and (max-width: 64em) {
 
-	#about img.icon {
-		padding: 0 2.5em;
-	}
+	#nav-spacer {height: 3em;}
+
+	#about img.icon {padding: 0 2.5em;}
 
 	#about p {font-size: 0.75em; padding-left: 0.8em;}
 
 	#about h5 {font-size: 0.8em;}
 
-	#contact .contact-icon {opacity: 1;}
+	img#profile {width: 9em;}
+
+	#contact a {opacity: 1; font-size: 0.75em;}
 
 }
 
@@ -588,16 +537,9 @@ img#profile {
 
 	.wrapper {padding: 0; margin: 0;}
 
-	#nav-spacer {
-		height: 8em;
-	}
+	#small-nav-spacer {height: 4em; background-color: #212121}
 
 	#work {padding: 5% 0 0;}
-
-	img#profile {
-		width: 10em;
-		border-radius: 50%;
-	}
 
 	.bgslide-small {
 		width: 100%;
@@ -608,7 +550,7 @@ img#profile {
 	}
 
 	.banner-text {
-	    top: 58%;
+	    top: 52%;
 	    padding: 0;
 	}
 	.banner-text h2, .banner-text h4 {text-align: center;}
@@ -622,6 +564,8 @@ img#profile {
 	}
 
 	#about p {font-size: 0.8em; padding-left: 0.5em;}
+
+	img#profile {width: 10em;}
 
 	#contact .contact-icon {font-size:3em;}
 
