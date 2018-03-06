@@ -94,6 +94,10 @@ p {
 	text-align: right;
 }
 
+.text-center {
+	text-align: center;
+}
+
 .kern-tight {
 	letter-spacing: -0.03em;
 }
@@ -187,6 +191,7 @@ img {max-width: 100%}
 	display: block;
 }
 
+
 /* BG Slide*/
 
 .bgslide {
@@ -202,7 +207,7 @@ img {max-width: 100%}
 	z-index: 1;
 	position: absolute;
     top: 20%;
-    padding: 0 0 0 15%;
+    padding: 0 3% 0 15%;
     text-align: left;
     color: #fff;
     text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
@@ -212,6 +217,7 @@ img {max-width: 100%}
 	color: #fff;
 }
 
+.project {top: 15%;}
 
 /* Work */
 
@@ -489,12 +495,49 @@ img#profile {
 }
 
 
+/* Project Page Nav */
+
+#nav #back {
+	float: left;
+	padding-top: 0.7em;
+}
+
+#nav #back a.nvgames:hover, #nav #anchors a.nvgames:hover {color: #35bdaf;}
+
+
 /* Project Detail & Content */
+
+img.project-banner {
+	width: 100%;
+}
+
+.project-info h4 {
+	text-align: left;
+	font-weight: 800;
+	padding: 1.5em 0 0.25em;
+}
+
+.project-info p {
+	font-size: 0.6em;
+}
+
+.project-info ul {
+	font-size: 0.6em;
+	text-align: left;
+	margin-left: 1.25em;
+}
+
+.project-content h1 {padding: 2em 0 0.25em;}
+
+.project-content img {padding: 0 0 2em;}
+
+
+
 .project-detail h2 {padding: 0.5em 0 0; color: #212121; text-shadow:none; }
 .project-detail h3 {padding: 0 0 1em; color: #829199; font-size: 1em; font-weight: 400; text-shadow:none; }
 .project-detail p {text-align: center; padding: 0 0.5em;}
-.project-content {margin: 2em 0;}
-.project-content img {padding: 0.625em 1em 3em;}
+
+
 
 .videoWrapper {
 	position: relative;
