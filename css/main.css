@@ -187,7 +187,7 @@ img {max-width: 100%}
 
 #nav-spacer {
 	height: 2em;
-	background-color: #000;
+	background-color: #121212;
 	display: block;
 }
 
@@ -217,7 +217,7 @@ img {max-width: 100%}
 	color: #fff;
 }
 
-.project {top: 15%;}
+.project {top: 5em;}
 
 /* Work */
 
@@ -407,7 +407,7 @@ img {max-width: 100%}
 	padding: 0;
 }
 
-#about #skills .skill-box {
+.white-box {
 	background-color: #fff;
 	margin: 0.25em;
 	padding: 0.5em;
@@ -503,6 +503,20 @@ img#profile {
 }
 
 #nav #back a.nvgames:hover, #nav #anchors a.nvgames:hover {color: #35bdaf;}
+#nav #back a.gfe:hover, #nav #anchors a.gfe:hover {color: #816fd6;}
+#nav #back a.shield:hover, #nav #anchors a.shield:hover {color: #f6bb43;}
+#nav #back a.icons:hover, #nav #anchors a.icons:hover {color: #ec5463;}
+#nav #back a.samsung:hover, #nav #anchors a.samsung:hover {color: #d870ad;}
+#nav #back a.abg:hover, #nav #anchors a.abg:hover {color: #4b8cdc;}
+#nav #back a.ifixers:hover, #nav #anchors a.ifixers:hover {color: #3bb1d9;}
+#nav #back a.streamly:hover, #nav #anchors a.streamly:hover {color: #f58d42;}
+#nav #back a.planet:hover, #nav #anchors a.planet:hover {color: #508199;}
+#nav #back a.landscape:hover, #nav #anchors a.landscape:hover {color: #444dc6;}
+
+a.nvgames {color: #0c998b;}
+a.nvgames:hover {color: #35bdaf;}
+a.gfe {color: #5748a3;}
+a.gfe:hover {color: #816fd6;}
 
 
 /* Project Detail & Content */
@@ -514,7 +528,7 @@ img.project-banner {
 .project-info h4 {
 	text-align: left;
 	font-weight: 800;
-	padding: 1.5em 0 0.25em;
+	padding: 0.25em 0 0.1em 0.5em;
 }
 
 .project-info p {
@@ -524,20 +538,14 @@ img.project-banner {
 .project-info ul {
 	font-size: 0.6em;
 	text-align: left;
-	margin-left: 1.25em;
+	margin: 0 0.5em 0.5em 1.75em;
 }
 
 .project-content h1 {padding: 2em 0 0.25em;}
 
 .project-content img {padding: 0 0 2em;}
 
-
-
-.project-detail h2 {padding: 0.5em 0 0; color: #212121; text-shadow:none; }
-.project-detail h3 {padding: 0 0 1em; color: #829199; font-size: 1em; font-weight: 400; text-shadow:none; }
-.project-detail p {text-align: center; padding: 0 0.5em;}
-
-
+.back-to-home-h1 {color:inherit;}
 
 .videoWrapper {
 	position: relative;
@@ -558,8 +566,6 @@ img.project-banner {
 /* Medium screen */
 @media only screen and (max-width: 64em) {
 
-	#nav-spacer {height: 3em;}
-
 	#about img.icon {padding: 0 2.5em;}
 
 	#about p {font-size: 0.75em; padding-left: 0.8em;}
@@ -569,6 +575,7 @@ img.project-banner {
 	img#profile {width: 9em;}
 
 	#contact a {opacity: 1; font-size: 0.75em;}
+
 
 }
 
@@ -580,7 +587,7 @@ img.project-banner {
 
 	.wrapper {padding: 0; margin: 0;}
 
-	#small-nav-spacer {height: 4em; background-color: #212121}
+	#small-nav-spacer {height: 4em; background-color: #121212}
 
 	#work {padding: 5% 0 0;}
 
@@ -594,8 +601,11 @@ img.project-banner {
 
 	.banner-text {
 	    top: 52%;
-	    padding: 0;
+	    padding: 0 2em;
 	}
+
+	.banner-text.project {top: 46%;}
+
 	.banner-text h2, .banner-text h4 {text-align: center;}
 
 	.banner-text h4 {font-size:0.9em;}
