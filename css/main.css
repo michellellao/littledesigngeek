@@ -272,9 +272,10 @@ img {max-width: 100%}
 	overflow: hidden;
 	top: 0;
 	left: 0;
-	padding: 0;
+	padding: 0 0.75em;
 	width: 100%;
-	height: 95%;
+	height: 82%;
+
 }
 
 #work-detail a .view-project > .inside {
@@ -285,6 +286,7 @@ img {max-width: 100%}
 	width: 100%;
 	height: 100%;
 	opacity: 0;
+	background-color: rgba(0,0,0,0.67);
 		-webkit-transition: all 300ms ease-out;
 		-moz-transition: all 300ms ease-out;
 		-o-transition: all 300ms ease-out;
@@ -299,20 +301,20 @@ img {max-width: 100%}
 
 #work-detail .view-project > .inside h4 {
 	position: relative;
-	top: 45%;
+	top: 50%;
 	transform: translateY(-50%);
 	-webkit-transition: all 300ms ease-out;
 	-moz-transition: all 300ms ease-out;
 	-o-transition: all 300ms ease-out;
 	-ms-transition: all 300ms ease-out;	
 	transition: all 300ms ease-out;
-	margin: 0 25%;
-	padding: 0.35em 0.5em; 
-	background-color: rgba(255, 255, 255, 0.9);
+	margin: 0 10%;
+	padding: 0.35em 0.5em;
 	font-weight: 800;
-	font-size: 1.15em;
+	font-size: 1em;
+	line-height: 1.5em;
 	border-radius: 0.25em;
-	color: #212121;
+	color: #fff;
 	text-shadow: none;
 }
 
@@ -517,6 +519,22 @@ a.nvgames {color: #0c998b;}
 a.nvgames:hover {color: #35bdaf;}
 a.gfe {color: #5748a3;}
 a.gfe:hover {color: #816fd6;}
+a.shield {color: #eda20a;}
+a.shield:hover {color: #f6bb43;}
+a.icons {color: #c22a39;}
+a.icons:hover {color: #ec5463;}
+a.samsung {color: #be3686;}
+a.samsung:hover {color: #d870ad;}
+a.abg {color: #1e64bb;}
+a.abg:hover {color: #4b8cdc;}
+a.ifixers {color: #0082ae;}
+a.ifixers:hover {color: #3bb1d9;}
+a.streamly {color: #d45c27;}
+a.streamly:hover {color: #f58d42;}
+a.planet {color: #1b5b7b;}
+a.planet:hover {color: #508199;}
+a.landscape {color: #2933ad;}
+a.landscape:hover {color: #444dc6;}
 
 
 /* Project Detail & Content */
