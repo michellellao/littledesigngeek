@@ -637,8 +637,7 @@ img.project-banner {
 	}
 
 	.banner-text {
-	    top: 52%;
-	    padding: 0 2em;
+	    padding: 1em 0;
 	    text-align: center;
 	}
 
