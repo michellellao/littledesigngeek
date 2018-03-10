@@ -208,7 +208,7 @@ svg.svg-inline--fa {margin-right: 0.25em;}
 .banner-text {
 	z-index: 1;
 	position: absolute;
-    top: 52%;
+    top: 20%;
     padding: 0 3% 0 15%;
     text-align: left;
     color: #fff;
@@ -637,11 +637,10 @@ img.project-banner {
 	}
 
 	.banner-text {
-	    padding: 1em 0;
+		top: 46%;
+	    padding: 2.5em;
 	    text-align: center;
 	}
-
-	.banner-text.project {top: 55%;}
 
 	.banner-text h2, .banner-text h4 {text-align: center;}
 
