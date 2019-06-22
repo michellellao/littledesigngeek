@@ -267,6 +267,7 @@ svg.svg-inline--fa {margin-right: 0.25em;}
 #work-detail h4.label {
 	color: #212121;
 	padding: 0 0 2em;
+	font-size: 0.65em;
 }
 
 #work-detail a .view-project {
@@ -315,7 +316,7 @@ svg.svg-inline--fa {margin-right: 0.25em;}
 	margin: 0 10%;
 	padding: 0.35em 0.5em;
 	font-weight: 800;
-	font-size: 1em;
+	font-size: 0.75em;
 	line-height: 1.5em;
 	border-radius: 0.25em;
 	color: #fff;
@@ -370,13 +371,13 @@ svg.svg-inline--fa {margin-right: 0.25em;}
 }
 
 #quote1 {
-	background: #83896f url('../img/photo/journeybg1.png') center center no-repeat;
+	background: #83896f url('../img/photo/outdoorbg1.jpg') center center no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
 }
 
 #quote2 {
-	background: #36253c url('../img/photo/journeybg2.png') center center no-repeat;
+	background: #36253c url('../img/photo/outdoorbg3.jpg') center center no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
 }
@@ -444,22 +445,20 @@ svg.svg-inline--fa {margin-right: 0.25em;}
 
 #contact {
 	min-height: 40%;
-	background: #121212 url('../img/photo/star-bg.png');
 }
 
 #contact-content {z-index: 10;}
 
 #contact h1 {
-	color: #fff;
 	padding: 1.25em 0 1em;
 }
 
 img#profile {
-	width: 7em;
+	width: 15em;
 	border-radius: 50%;
 }
 
-#contact a {opacity: 0.67; font-size: 1em; font-weight: 700;}
+#contact a {opacity: 1; font-size: 1em; font-weight: 700;}
 
 #contact .contact-icon {
 	opacity: 1;
@@ -470,7 +469,7 @@ img#profile {
 }
 
 #contact a:hover {
-	opacity: 1;
+	opacity: 0.7;
 }
 
 #contact #linkedin {
@@ -485,11 +484,11 @@ img#profile {
 }
 
 #contact #resume a, #contact #resume .contact-icon {
-	color: #f6bb43;
+	color: #3BB2A5;
 }
 
 #copyright {
-	background-color: #212121;
+	background-color: #333333;
 	color: #fff;
 }
 
@@ -509,7 +508,9 @@ img#profile {
 }
 
 #nav #back a.nvgames:hover, #nav #anchors a.nvgames:hover {color: #35bdaf;}
-#nav #back a.gfe:hover, #nav #anchors a.gfe:hover {color: #816fd6;}
+#nav #back a.hintgo:hover, #nav #anchors a.hintgo:hover {color: #BC82FF;}
+#nav #back a.gfe:hover, #nav #anchors a.gfe:hover {color: #487BE0;}
+#nav #back a.visuals:hover, #nav #anchors a.visuals:hover {color: #B3C3D0;}
 #nav #back a.shield:hover, #nav #anchors a.shield:hover {color: #f6bb43;}
 #nav #back a.icons:hover, #nav #anchors a.icons:hover {color: #ec5463;}
 #nav #back a.samsung:hover, #nav #anchors a.samsung:hover {color: #d870ad;}
@@ -521,8 +522,12 @@ img#profile {
 
 a.nvgames {color: #0c998b;}
 a.nvgames:hover {color: #35bdaf;}
-a.gfe {color: #5748a3;}
-a.gfe:hover {color: #816fd6;}
+a.hintgo {color: #8B6AE1;}
+a.hintgo:hover {color: #BC82FF;}
+a.gfe {color: #2660D1;}
+a.gfe:hover {color: #487BE0;}
+a.visuals {color: #7E919F;}
+a.visuals:hover {color: #B3C3D0;}
 a.shield {color: #eda20a;}
 a.shield:hover {color: #f6bb43;}
 a.icons {color: #c22a39;}
@@ -637,8 +642,8 @@ img.project-banner {
 	}
 
 	.banner-text {
-		top: 46%;
-	    padding: 3.5em 2.5em;
+		top: 40%;
+	    padding: 0 2.5em 3.5em;
 	    text-align: center;
 	}
 
